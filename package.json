@@ -1,0 +1,36 @@
+{
+  "name": "mongodb-api",
+  "version": "1.0.0",
+  "description": "\"# MongoDB-API\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sorrow31812/MongoDB-API.git"
+  },
+  "author": "KeKe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sorrow31812/MongoDB-API/issues"
+  },
+  "homepage": "https://github.com/sorrow31812/MongoDB-API#readme",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.13"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.3"
+  },
+  "keywords": []
+}
