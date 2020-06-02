@@ -6,7 +6,6 @@
     },
     "extends": "airbnb-base",
     "rules": {
-      "linebreak-style": ["error", "windows"],
       "semi": [2, "never"],
       "arrow-body-style": ["error", "always"],
       "no-param-reassign": [2, { "props": false }],

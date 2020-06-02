@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const express = require('express')
 const bodyParser = require('body-parser')
 const http = require('http')
@@ -5,12 +6,8 @@ const mongoose = require('./mongoose')
 
 const app = express()
 const port = process.env.PORT || 3000
-const mongoHost = 'mongodb://localhost:27017/mongodb'
+const mongoHost = 'mongodb://192.168.60.50:27017/game'
 
-// view
-// app.set('views', path.join(__dirname, 'views'))
-
-// initial mongoose
 mongoose.init({
   host: mongoHost,
   autoIndex: true,
@@ -26,14 +23,12 @@ const router = require('./routers/index')
 
 app.use(bodyParser.json())
 app.get('/homePage', (req, res) => {
-  res.send('Welcome to Animal crossing social plateform!')
+  res.send('Welcome to MongoDB API plateform!')
 })
 app.use('/api', router)
 
 
 const server = http.createServer(app)
 server.listen(port, () => {
-  // const host = server.address().address
-  // const { port } = server.address()
   console.log(`Node.js web server at port ${port} is running...`)
 })

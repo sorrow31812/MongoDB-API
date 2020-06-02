@@ -1,11 +1,18 @@
+/* eslint-disable linebreak-style */
 const express = require('express')
 
 const router = express.Router()
-// const signUpController = require('../controllers/signUp')
-// const logInController = require('../controllers/logIn')
-// const getUserDataController = require('../controllers/getUserData')
 
-// router.post('/signUp', signUpController)
-// router.post('/logIn', logInController)
-// router.post('/getUserData', getUserDataController)
+const enableBalanceController = require('../controllers/enableBalance')
+
+router.post('/enable-balance', enableBalanceController)
+
+const changeAmountController = require('../controllers/changeAmount')
+
+router.post('/change-amount', changeAmountController)
+
+const enableAllBalanceController = require('../controllers/enableAllBalance')
+
+router.get('/enable-all-balance', enableAllBalanceController)
+
 module.exports = router
