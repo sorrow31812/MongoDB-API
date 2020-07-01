@@ -15,4 +15,8 @@ const enableAllBalanceController = require('../controllers/enableAllBalance')
 
 router.get('/enable-all-balance', enableAllBalanceController)
 
+const changeWeightsController = require('../controllers/changeWeights')
+
+router.get('/change-weights', changeWeightsController)
+
 module.exports = router
