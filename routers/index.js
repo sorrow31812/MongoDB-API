@@ -17,6 +17,14 @@ router.get('/enable-all-balance', enableAllBalanceController)
 
 const changeWeightsController = require('../controllers/changeWeights')
 
-router.get('/change-weights', changeWeightsController)
+router.post('/change-weights', changeWeightsController)
+
+const enabledBetRecordController = require('../controllers/enabledBetRecord')
+
+router.post('/enabled-betRecord', enabledBetRecordController)
+
+const enableUserController = require('../controllers/enableUser')
+
+router.post('/enable-user', enableUserController)
 
 module.exports = router
