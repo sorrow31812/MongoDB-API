@@ -9,9 +9,11 @@ const type = {
 const logHead = '[change-amount] '
 const changeAmount = async (req, res) => {
   console.log(`${logHead}Start: ${JSON.stringify(req.body)}`)
-  const { userId, amount, gameType } = req.body
+  const { userId, amount, gameType, gemAmount } = req.body
   const balanceQuery = { userId, providerId: type[gameType] }
-  await Balance.updateOne(balanceQuery, { amount })
+  let update = { amount }
+  if (gemAmount) update.gemAmount = gemAmount
+  await Balance.updateOne(balanceQuery, update)
   const response = {
     status: 200,
     message: 'OK'

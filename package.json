@@ -23,7 +23,8 @@
     "express": "^4.17.1",
     "mongodb": "^3.5.7",
     "mongoose": "^5.9.13",
-    "models": "git+https://egames:9M7yKbQyGxvz_PuouuAe@git.bxvip.co/slot-game/models.git#master"
+    "models": "git+https://egames:9M7yKbQyGxvz_PuouuAe@git.bxvip.co/slot-game/models.git#master",
+    "lib": "git+https://egames:9M7yKbQyGxvz_PuouuAe@git.bxvip.co/slot-game/lib.git#master"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
