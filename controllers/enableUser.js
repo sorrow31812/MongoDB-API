@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 const Models = require('models')
-const redis = require('lib').redis
+const lib = require('lib')
 
 const { Balance, User } = Models
 const type = {
@@ -10,10 +10,7 @@ const type = {
 const logHead = '[Enable-user] '
 const enableUser = async (req, res) => {
   console.log(`${logHead}Start: ${JSON.stringify(req.body)}`)
-  const { userId, gameType, gameId } = req.body
-
-  const redisKey = `poker:${gameId}:${userId}`
-  await redis.del(redisKey)
+  const { userId, gameType } = req.body
 
   const balanceQuery = { userId, providerId: type[gameType] }
   await Balance.updateOne(balanceQuery, { status: 'Enabled' })

@@ -3,6 +3,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const http = require('http')
 const mongoose = require('./mongoose')
+// const lib = require('lib')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -18,6 +19,8 @@ mongoose.init({
   // autoReconnect: true,
   useUnifiedTopology: true
 })
+
+// lib.redis.init(redisSetting)
 
 const router = require('./routers/index')
 

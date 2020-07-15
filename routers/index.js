@@ -24,4 +24,7 @@ router.post('/enable-user', enableUserController)
 const updatePoolsController = require('../controllers/updatePools')
 router.post('/update-pools', updatePoolsController)
 
+const createNpcBalanceController = require('../controllers/createNpcBalance')
+router.get('/create-npc-balance', createNpcBalanceController)
+
 module.exports = router
