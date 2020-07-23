@@ -27,4 +27,7 @@ router.post('/update-pools', updatePoolsController)
 const createNpcBalanceController = require('../controllers/createNpcBalance')
 router.get('/create-npc-balance', createNpcBalanceController)
 
+const addPoolsController = require('../controllers/addPools')
+router.get('/add-pools', addPoolsController)
+
 module.exports = router

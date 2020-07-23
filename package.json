@@ -25,7 +25,8 @@
     "lodash": "^4.17.19",
     "models": "git+https://egames:9M7yKbQyGxvz_PuouuAe@git.bxvip.co/slot-game/models.git#master",
     "mongodb": "^3.5.7",
-    "mongoose": "^5.9.13"
+    "mongoose": "^5.9.13",
+    "shortid": "^2.2.15"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
